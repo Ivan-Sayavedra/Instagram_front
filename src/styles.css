@@ -1,0 +1,23 @@
+.contenedor-principal {
+  box-sizing: border-box;
+  /* position: absolute; */
+  width: 527px;
+  height: 739px;
+  margin: 0 auto;
+  /* left: 457px;
+  top: 143px; */
+  background: #fcfcfc;
+  border: 1px solid #dedede;
+  box-shadow: -1px 7px 8px -5px rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: absolute;
+  width: 117px;
+  height: 38px;
+  left: 557px;
+  top: 164px;
+}
