@@ -5,19 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Front-End Test</title>
+    <!-- Styles -->
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="contenedor-principal">
-      <header class="" header>
-        <div>
-          <img src="" alt="foto-perfil" />
+    <header>
+      <div class="header__profile-photo">
+        <img src="" alt="profile-photo" />
+      </div>
+      <div>
+        <p class="header__profile-name">Iván Sayavedra</p>
+        <p class="header__location">Rosario, Santa Fe</p>
+      </div>
+    </header>
+    <main>
+      <!-- SWIPPER -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
         </div>
-        <div>
-          <p>Iván Sayavedra</p>
-          <p>Rosario, Santa Fe</p>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!--  -->
+      <!-- FEED -->
+      <div class="feed">
+        <div class="feed__actions">
+          <button
+            class="feed__actions__like-btn"
+            id="likebtn"
+            name="Like Button"
+          >
+            <img src="./assets/ig_hearth-icon.svg" />
+          </button>
+
+          <img src="./assets/ig_comment-icon.svg" alt="comment-icon" />
+          <img src="./assets/ig_direct-message-icon.svg" alt="share-icon" />
         </div>
-      </header>
-    </div>
+        <div class="feed__comments">
+          <p>
+            <b>Nombre de usuario</b> Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.
+          </p>
+          <p>
+            <b>Otro usuario</b> Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <!-- POST INPUT -->
+      <div class="new-comment">
+        <input class="new-comment__text" />
+        <button class="new-comment__button">Post</button>
+      </div>
+      <!--  -->
+    </main>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="./index.js"></script>
 </html>
