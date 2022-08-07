@@ -8,4 +8,8 @@ Este ejemplo fue desarrollado únicamente usando HTML, CSS y JS sin frameworks.
 - Dentro de la carpeta "js" se encuentran todas las funciones utilizadas, dividas en diferentes archivos para tener mayor control y para una futura escalabilidad.
 - Para el CSS se utilizó BEM para nombrar las clases. Estas se encuentran todas en el archivo "styles.css".
 - Dentro de la carpeta "assets" están todas las imágenes utilizadas.
-- El único paquete instalado es para el funcionamiento de la librería "swiper", utilizada para los slides de imágenes.
+
+## NPM packages
+
+- El único paquete instalado para el desarrollo es para el funcionamiento de la librería "swiper", utilizada para los slides de imágenes.
+- Se utilizó el paquete "surge" para hacer el deploy.
