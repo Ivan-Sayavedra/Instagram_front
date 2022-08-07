@@ -1,3 +1,6 @@
+import getImages from "./js/api_images.js";
+
+// SWIPER
 const swiper = new Swiper(".mySwiper", {
   cssMode: true,
   navigation: {
@@ -11,6 +14,7 @@ const swiper = new Swiper(".mySwiper", {
   keyboard: true,
 });
 
+// BTN LIKE
 let likebtn = document.getElementById("likebtn");
 let likebtn_class = likebtn.className;
 function toggle() {
@@ -24,12 +28,5 @@ function toggle() {
 }
 likebtn.addEventListener("click", toggle);
 
-let url_images = "https://picsum.photos/v2/list?limit=5";
-
-const getImages = async () => {
-  const response = await fetch(url_images);
-  const images = await response.json();
-  console.log(images);
-  // return response;
-};
+// API images
 getImages();

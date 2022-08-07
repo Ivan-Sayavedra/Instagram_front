@@ -32,7 +32,24 @@ header {
   /* left: 557px;
   top: 164px; */
 }
+.header__profile-photo {
+  width: 50px;
+  height: 50px;
+}
+.header__profile-photo > img {
+  width: 100%;
+  height: 100%;
+}
+.header__profile-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+.header__location {
+  font-size: 10px;
+  font-weight: 400;
+}
 
+/* MAIN */
 main {
   display: flex;
   flex-direction: column;
